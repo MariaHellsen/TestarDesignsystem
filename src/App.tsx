@@ -1,6 +1,6 @@
-import { DigiLayoutBlock, DigiLayoutContainer, DigiTypography } from "@digi/arbetsformedlingen-react";
+import { DigiButton, DigiLayoutBlock, DigiLayoutContainer, DigiTypography } from "@digi/arbetsformedlingen-react";
 import "./App.css";
-import {  LayoutBlockVariation } from "@digi/arbetsformedlingen";
+import {  ButtonSize, ButtonVariation, LayoutBlockVariation } from "@digi/arbetsformedlingen";
 
 function App() {
   return <>
@@ -8,7 +8,12 @@ function App() {
   <DigiTypography>
 
   <DigiLayoutContainer> 
-    <div></div>
+    <div><DigiButton
+  afSize={ButtonSize.MEDIUM}
+	afVariation={ButtonVariation.PRIMARY}
+	afFullWidth={false}>
+	Knapp test
+</DigiButton></div>
     <div></div>
     <div></div>
     </DigiLayoutContainer>
