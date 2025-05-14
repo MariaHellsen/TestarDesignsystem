@@ -2,7 +2,7 @@ import {
   DigiLayoutBlock,
   DigiLayoutContainer,
   DigiTypography,
-  DigiCalender,
+  DigiCalendar,
 } from "@digi/arbetsformedlingen-react";
 export const Marias = () => {
   return (
@@ -10,7 +10,7 @@ export const Marias = () => {
       <DigiLayoutBlock>
         <DigiTypography>
           <DigiLayoutContainer>
-            <DigiCalender afActive={true} afMultipleDates={true}></DigiCalender>
+            <DigiCalendar afActive={true} afMultipleDates={true}></DigiCalendar>
           </DigiLayoutContainer>
         </DigiTypography>
       </DigiLayoutBlock>
