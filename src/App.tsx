@@ -1,12 +1,16 @@
 import {
+  DigiButton,
   DigiLayoutBlock,
   DigiLayoutContainer,
   DigiTypography,
   DigiCalendar,
-  DigiButton,
 } from "@digi/arbetsformedlingen-react";
 import "./App.css";
-import { LayoutBlockVariation } from "@digi/arbetsformedlingen";
+import {
+  ButtonSize,
+  ButtonVariation,
+  LayoutBlockVariation,
+} from "@digi/arbetsformedlingen";
 import { DigiInfoCard } from "@digi/arbetsformedlingen-react";
 import { InfoCardHeadingLevel } from "@digi/arbetsformedlingen";
 import { InfoCardType } from "@digi/arbetsformedlingen";
@@ -19,7 +23,15 @@ function App() {
       <DigiLayoutBlock afVariation={LayoutBlockVariation.PRIMARY}>
         <DigiTypography>
           <DigiLayoutContainer>
-            <div></div>
+            <div>
+              <DigiButton
+                afSize={ButtonSize.MEDIUM}
+                afVariation={ButtonVariation.PRIMARY}
+                afFullWidth={false}
+              >
+                Knapp test
+              </DigiButton>
+            </div>
             <div>
               <DigiInfoCard
                 afHeading="Jag är ett infokort"
@@ -38,12 +50,7 @@ function App() {
                 </p>
               </DigiInfoCard>
             </div>
-            <div>
-              {" "}
-              <DigiCalendar afActive={true} afMultipleDates={true}>
-                <DigiButton slot="calendar-footer">Välj</DigiButton>
-              </DigiCalendar>
-            </div>
+            <div></div>
           </DigiLayoutContainer>
         </DigiTypography>
       </DigiLayoutBlock>
