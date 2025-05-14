@@ -1,10 +1,11 @@
 import {
+  DigiButton,
   DigiLayoutBlock,
   DigiLayoutContainer,
   DigiTypography,
 } from "@digi/arbetsformedlingen-react";
 import "./App.css";
-import { LayoutBlockVariation } from "@digi/arbetsformedlingen";
+import { ButtonSize, ButtonVariation, LayoutBlockVariation } from "@digi/arbetsformedlingen";
 import { DigiInfoCard } from "@digi/arbetsformedlingen-react";
 import { InfoCardHeadingLevel } from "@digi/arbetsformedlingen";
 import { InfoCardType } from "@digi/arbetsformedlingen";
@@ -17,7 +18,12 @@ function App() {
       <DigiLayoutBlock afVariation={LayoutBlockVariation.PRIMARY}>
         <DigiTypography>
           <DigiLayoutContainer>
-            <div></div>
+            <div><DigiButton
+  afSize={ButtonSize.MEDIUM}
+	afVariation={ButtonVariation.PRIMARY}
+	afFullWidth={false}>
+	Knapp test
+</DigiButton></div>
             <div><DigiInfoCard
 	afHeading="Jag är ett infokort"
 	afHeadingLevel={InfoCardHeadingLevel.H2}
