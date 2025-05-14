@@ -50,7 +50,11 @@ function App() {
                 </p>
               </DigiInfoCard>
             </div>
-            <div></div>
+            <div>
+              <DigiCalendar afActive={true} afMultipleDates={true}>
+                <DigiButton slot="calendar-footer">Välj</DigiButton>
+              </DigiCalendar>
+            </div>
           </DigiLayoutContainer>
         </DigiTypography>
       </DigiLayoutBlock>
